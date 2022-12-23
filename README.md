@@ -15,7 +15,7 @@ Numpy   (validated with version 1.23.3)
 xarray  (validated version 2022.11.0)
 netCDF4 (validated with version 1.5.7)
 
-**Before conducting training and evaluation modify the train.py and generate.py script by toggling the CUDA flag at the top of the script if you wish to use a CUDA enabled device.**
+**Before conducting training and ensemble generation modify the train.py and generate.py scripts by setting the CUDA flag at the top of the scripts appropriately. If you wish to use a CUDA enabled device set CUDA = True.**
 
 ## Training the model
 
