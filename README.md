@@ -2,7 +2,9 @@
 
 The ANET model, training, and calibrated ensemble generation scripts.
 
-* ...: The EUPPBench postprocessing benchmark dataset v1.0, ...
+This code is provided as supplementary material with:
+
+...: The EUPPBench postprocessing benchmark dataset v1.0, ...
 
 **Please cite this article if you use (a part of) this code for a publication.**
 
