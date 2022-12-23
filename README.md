@@ -17,7 +17,7 @@ Numpy   (validated with version 1.23.3)
 xarray  (validated version 2022.11.0)
 netCDF4 (validated with version 1.5.7)
 
-## Train the model
+## Training the model
 
 To initiate the training execute the train.py script in the following way:
 
