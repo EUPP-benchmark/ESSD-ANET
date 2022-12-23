@@ -17,7 +17,7 @@ netCDF4 (validated with version 1.5.7)
 
 ## Train the model
 
-To begin the thraining execute the train.py script in the following way:
+To initiate the training execute the train.py script in the following way:
 
 python3 train.py <path to data folder> <optional postfix to the output folder name>
 
