@@ -21,7 +21,7 @@ netCDF4 (validated with version 1.5.7)
 
 To initiate the training execute the train.py script in the following way:
 
-python3 train.py ***\<path to data folder\>*** ***\<optional postfix to the output folder name\>***
+python3 train.py ***\<path to data folder\>*** ***\<optional postfix for the output folder\>***
 
 (You can acquire the data from https://github.com/EUPP-benchmark/ESSD-benchmark-datasets)
 
