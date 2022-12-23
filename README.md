@@ -11,7 +11,7 @@ Before conducting training and evaluation modify the train.py and generate.py sc
 ## Required Python libraries
 
 Pytorch (validated with version 1.13.0)
-Numpy   (validated with version1.23.3)
+Numpy   (validated with version 1.23.3)
 xarray  (validated version 2022.11.0)
 netCDF4 (validated with version 1.5.7)
 
