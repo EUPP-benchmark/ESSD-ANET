@@ -27,7 +27,7 @@ python3 train.py ***\<path to data folder\>*** ***\<optional postfix for the out
 
 After training is concluded the folder named Model\_***\<training parameters, timestamp, optional postfix\>*** will contain two ANET models (best training loss and best validation loss models).
 
-## Generating calibrated ensemble
+## Generating a calibrated ensemble
 
 To generate the calibrated ensemble, execute:
 
