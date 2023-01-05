@@ -1,6 +1,6 @@
 # ESSD-ANET
 
-The ANET model, training, and calibrated ensemble generation scripts.
+The ANET model training, and calibrated ensemble generation scripts.
 
 This code is provided as supplementary material with:
 
