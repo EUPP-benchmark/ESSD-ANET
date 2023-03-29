@@ -10,7 +10,7 @@ CUDA = torch.cuda.is_available()
 
 class Databank():
 
-    def __init__(self, X, Y, P, cuda = True):
+    def __init__(self, X, Y, P, cuda = CUDA):
 
         self.X = torch.tensor(X, dtype = torch.float32)
         self.Y = torch.tensor(Y, dtype = torch.float32)
@@ -29,7 +29,7 @@ class Databank():
 
 class Dataset(torch.utils.data.Dataset):
 
-    def __init__(self, databank, index, n_predictors = 8, batch_size = 32, cuda = True, train = True):
+    def __init__(self, databank, index, n_predictors = 8, batch_size = 32, cuda = CUDA, train = True):
         
         super().__init__()
 
