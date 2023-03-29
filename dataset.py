@@ -4,6 +4,8 @@ import torch
 
 from os.path import join
 
+CUDA = torch.cuda.is_available()
+
 #### Dataset definition ####
 
 class Databank():
