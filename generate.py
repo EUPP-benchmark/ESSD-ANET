@@ -134,10 +134,10 @@ VERSION = "v1.0"
 
 netcdf = netCDF4.Dataset(join(EVALUATION_OUTPUT, f"{TIER}_{EXPERIMENT}_{INSTITUTION}_{MODEL}_{VERSION}.nc"), mode = "w", format = "NETCDF4_CLASSIC")
 
-netcdf.createDimension("station_id", 229)
+netcdf.createDimension("station_id", len(stations))
 netcdf.createDimension("number", 51)
 netcdf.createDimension("step", 21)
-netcdf.createDimension("time", 730)
+netcdf.createDimension("time", len(time))
 
 t2m = netcdf.createVariable("t2m", np.float32, ("station_id", "time", "step", "number"))
 
