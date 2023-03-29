@@ -9,8 +9,8 @@ import sys
 from dataset import Databank, Dataset, norm, normalize, load_training_dataset, load_validation_dataset, denormalize
 from model import Model
 
-# Set to True if training on GPU is wanted #
-CUDA = True
+# Set to CUDA to True to force training on GPU #
+CUDA = torch.cuda.is_available()
 
 #########################################################
 
