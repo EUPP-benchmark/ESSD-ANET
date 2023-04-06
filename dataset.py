@@ -78,9 +78,6 @@ class Dataset(torch.utils.data.Dataset):
             r_m = np.random.permutation(self.n_members)
             X = self.X_batch[:, :, r_m]
 
-            s_m = np.random.randint(4, self.n_members + 1)
-            X = self.X_batch[:, :, :s_m]
-
         else:
             X = self.X_batch
 

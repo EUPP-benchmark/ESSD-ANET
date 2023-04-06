@@ -9,6 +9,8 @@ import sys
 from dataset import Databank, Dataset, norm, normalize, load_training_dataset, load_validation_dataset, denormalize
 from model import Model
 
+from torch.optim.lr_scheduler import ReduceLROnPlateau
+
 # Set to CUDA to True to force training on GPU #
 CUDA = torch.cuda.is_available()
 
@@ -81,6 +83,7 @@ M = Model(number_of_predictors = 8, lead_time = 21, output_features = 2, hidden_
 M = M.cuda() if CUDA else M.cpu()
 
 opt = torch.optim.Adam(M.parameters(), lr = LEARNING_RATE, weight_decay = 1e-9)
+sch = ReduceLROnPlateau(opt, factor = 0.9, patience = 10) # Added to increase numerical stability
 
 best_train_loss = None
 best_valid_loss = None
@@ -131,6 +134,8 @@ for e in range(N_EPOCHS):
 
     train_loss /= len(D_train)
     valid_loss /= len(D_valid)
+
+    sch.step(valid_loss)
 
     print(f"{e + 1}/{N_EPOCHS}: TLoss {train_loss} VLoss {valid_loss}")
     

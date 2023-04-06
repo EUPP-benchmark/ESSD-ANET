@@ -6,7 +6,7 @@ from os import mkdir
 
 import sys
 
-CUDA = False
+CUDA = torch.cuda.is_available() 
 
 #########################################################
 
